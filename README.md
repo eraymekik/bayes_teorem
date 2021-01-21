@@ -1,16 +1,16 @@
-Bayes Teoremı
+**Bayes Teoremı
 
-BAYES Teoremini hesaplamak için bir örnek inceleyelim
+*BAYES Teoremini hesaplamak için bir örnek inceleyelim
 
 Önce bir senaryo tanımlayacağız, ardından manuel bir hesaplama, Ardından Python'da bir hesaplama yapacağız
 
-Teşhis Testi Senaryosu
+**Teşhis Testi Senaryosu
 
 	Manuel Hesaplama
 
 	Python Kodu Hesaplama
 
-Teşhis Testi Senaryosu
+*Teşhis Testi Senaryosu
 
 Bayes Teoreminin faydasının mükemmel ve yaygın olarak kullanılan bir örneği, tıbbi bir teşhis testinin analizidir.
 
@@ -18,7 +18,7 @@ Bayes Teoreminin faydasının mükemmel ve yaygın olarak kullanılan bir örne�
 
 	Sorun : Rastgele seçilen bir insanın testi var ve pozitif ise, hastanın covid yakalanma olasılığı nedir?
 
-Manuel Hesaplama
+*Manuel Hesaplama
 
 Tıbbi teşhis testleri mükemmel değildir; hatalar olabilir
    Bir hasta Covid olur, ama test onu tespit edemeyebilir. Testin Covid hastalığını tespit etme yeteneği, duyarlılık veya gerçek pozitif oran olarak adlandırılır.
@@ -36,7 +36,7 @@ Tıbbi teşhis testleri mükemmel değildir; hatalar olabilir
 	Bu durumda, Covid olasılığının düşük olduğunu varsayabiliriz ve 5.000'de bir kişi veya (0.0002)% 0.02'lik bir uydurma taban oran değeri kullanabiliriz.
      P (Covid= Doğru) =% 0,02.
 
-Senaryomuzu denklemle eşleyelim:
+*Senaryomuzu denklemle eşleyelim:
 
 	P (A | B) = P (B | A) * P (A) / P (B)
 
@@ -60,7 +60,7 @@ P (Test = Pozitif) = P (Test = Pozitif | covid= Doğru) * P (covid= Doğru) + P 
 
 	= 1 - 0.0002 = 0.9998
 
-	Elimizde ne varsa eklenti yapalım, bilinen değerlerimizi aşağıdaki gibi ekleyebiliriz:
+	*Elimizde ne varsa eklenti yapalım, bilinen değerlerimizi aşağıdaki gibi ekleyebiliriz:
 
 	P(Test=Pozitif)=0.85 * 0.0002+P(Test = Pozitif|covid= Yanlış) * 0.9998
 
